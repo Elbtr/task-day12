@@ -1,0 +1,219 @@
+body {
+  background-color: rgb(180, 180, 180);
+}
+
+.container {
+  width: 98vw;
+  margin: 20px auto;
+}
+
+.upload-project input,
+textarea {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+}
+
+.title {
+  text-align: center;
+}
+
+.upload-project {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.upload-project form {
+  width: 100%;
+}
+
+.upload-project form div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.upload-project form div label,
+span {
+  margin-bottom: 5px;
+}
+
+.upload-project form div textarea {
+  border-radius: 8px;
+  border: none;
+  height: 120px;
+  resize: none;
+  padding: 4px 8px;
+}
+
+.upload-project form .item-date {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.upload-project form .item-date input {
+  border-radius: 8px;
+  padding: 3px;
+  border: none;
+  height: 30px;
+}
+
+.item-input-image label {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  padding: 0 5px;
+  justify-content: space-between;
+  border-radius: 8px;
+  background-color: white;
+  border: none;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+}
+
+.item-input-image label input {
+  box-shadow: none;
+}
+
+.item-input-title input {
+  border-radius: 8px;
+  padding: 4px;
+  height: 25px;
+  border: none;
+}
+
+.upload-project form .item-input-technologies div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.upload-project form .item-input-technologies div div {
+  width: 100%;
+}
+.upload-project form .item-input-technologies div div label {
+  width: 200px;
+}
+
+.upload-project form .item-input-technologies div div label input {
+  box-shadow: none;
+}
+
+.button-submit button {
+  width: 78px;
+  background-color: #000;
+  color: white;
+  border: none;
+}
+
+.line {
+  border: 1px solid #000;
+  margin: 40px auto;
+}
+
+.list-project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  justify-items: center;
+  row-gap: 30px;
+  column-gap: 8px;
+}
+
+.list-project .card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+  padding: 16px 10px;
+  width: 300px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.list-project .card p {
+  font-size: 14px;
+}
+
+.animasi-button:active {
+  scale: 0.8;
+  transition: ease-in;
+  animation-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+/* .item-input-image label input[type="file"]::file-selector-button {
+  border: none;
+  width: 50px;
+} */
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 100vw;
+    margin: 0;
+  }
+  .list-project {
+    margin: 0 auto;
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
+  }
+  .list-project .card {
+    width: 240px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .upload-project {
+    width: 340px;
+  }
+
+  form {
+    width: 100vw;
+    padding: 2px;
+  }
+  .list-project {
+    overflow-y: hidden;
+    margin: 10px auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .list-project .card {
+    width: 400px;
+  }
+  .upload-project form .item-input-technologies div div label {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .upload-project {
+    width: 280px;
+  }
+
+  form {
+    width: 100vw;
+    padding: 2px;
+  }
+  .list-project {
+    overflow-y: hidden;
+    margin: 10px auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .list-project .card {
+    width: 300px;
+  }
+  .upload-project form .item-input-technologies div div label {
+    width: 100%;
+  }
+}

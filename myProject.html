@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/myProject.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li class="link">
+            <a href="index.html">
+              <img src="gambar/logo.png" alt="logo" />
+            </a>
+          </li>
+          <li class="li-colabs">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="active li-colabs">
+            <a href="myProject.html">My Project</a>
+          </li>
+          <li class="li-colabs">
+            <a href="testimonials.html">Testimonials</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <div class="li-colabs">
+          <a href="contact.html">
+            <p>Contact</p>
+          </a>
+        </div>
+        <div class="button-bars">
+          <button onclick="toggleBarHandle()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="item-list-menu-bars" id="item-list-menu-bars">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="myProject.html">My Project</a>
+        </li>
+        <li>
+          <a href="testimonials.html">Testimonials</a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <p>Contact</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="upload-project">
+        <div class="title">
+          <h1>Add My Project</h1>
+        </div>
+        <form onsubmit="addBlog(event)">
+          <div class="item-input-title">
+            <label for="input-title">Project Name</label>
+            <input type="text" id="input-title" />
+          </div>
+
+          <div class="item-date">
+            <div>
+              <label for="start-date">Start Date</label>
+              <input type="date" id="start-date" />
+            </div>
+            <div>
+              <label for="end-date">End Date</label>
+              <input type="date" id="end-date" />
+            </div>
+          </div>
+
+          <div class="item-input-content">
+            <label for="input-description">Description</label>
+            <textarea
+              name="input-description"
+              id="input-description"
+            ></textarea>
+          </div>
+
+          <div class="item-input-technologies">
+            <span>Technologies</span>
+            <div>
+              <div>
+                <label for="nodeJs">
+                  <input
+                    type="checkbox"
+                    name="framework"
+                    id="nodeJs"
+                    value="Node js"
+                  />
+                  Node Js
+                </label>
+              </div>
+              <div>
+                <label for="reactJs">
+                  <input
+                    type="checkbox"
+                    name="framework"
+                    id="reactJs"
+                    value="React js"
+                  />
+                  React Js
+                </label>
+              </div>
+              <div>
+                <label for="nextJs">
+                  <input
+                    type="checkbox"
+                    name="framework"
+                    id="java"
+                    value="Java"
+                  />
+                  Java
+                </label>
+              </div>
+              <div>
+                <label for="php">
+                  <input
+                    type="checkbox"
+                    name="framework"
+                    id="php"
+                    value="PHP"
+                  />
+                  PHP
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-input-image">
+            <span>Upload Image</span>
+            <label for="input-image">
+              <input type="file" id="input-image" hidden />
+              <span
+                style="
+                  margin-bottom: -1px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  text-align: center;
+                  width: 90px;
+                  height: 100%;
+                  border-radius: 8px;
+                  text-align: center;
+                "
+              >
+                <p>Choose</p>
+              </span>
+              <i class="fa-solid fa-file-import"></i>
+            </label>
+          </div>
+
+          <div style="width: 100%; display: flex; align-items: end">
+            <button
+              style="
+                width: 70px;
+                background: #000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                border: none;
+                height: 40px;
+                border-radius: 8px;
+                cursor: pointer;
+              "
+              class="animasi-button"
+              type="submit"
+            >
+              submit
+            </button>
+          </div>
+        </form>
+      </div>
+      <hr class="line" />
+      <div class="list-project" id="list-project">
+        <div class="card" id="card">
+          <img
+            src="gambar/project.png"
+            alt="project"
+            style="width: 100%; height: 200px; border-radius: 8px"
+          />
+          <div style="padding: 0">
+            <h5>Dumways mobile app v.3.4.01</h5>
+            <p style="font-weight: 200">duration : 3 mount</p>
+          </div>
+          <div style="padding: 0">
+            <p
+              style="
+                font-weight: 400;
+                white-space: normal;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+              "
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+              provident, libero tempora eveniet perspiciatis ad delectus et
+              debitis reprehenderit quibusdam doloribus at doloremque impedit
+              pariatur maiores. Dignissimos a sed eveniet?
+            </p>
+            <a
+              href="detailProject.html"
+              style="font-size: 13px; text-decoration: underline"
+              >lihat selengkap nya <span style="font-weight: bold">-></span></a
+            >
+          </div>
+          <section
+            style="
+              font-size: 24px;
+              display: flex;
+              justify-content: start;
+              align-items: center;
+              gap: 20px;
+            "
+          >
+            <i class="fa-brands fa-google-play"></i>
+            <i class="fa-brands fa-android"></i>
+            <i class="fa-brands fa-java"></i>
+          </section>
+          <div
+            style="
+              padding: 0;
+              display: flex;
+              justify-content: space-between;
+              gap: 5px;
+            "
+          >
+            <button
+              style="
+                width: 50%;
+                padding: 7px 0;
+                background-color: chocolate;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+              "
+            >
+              edit
+            </button>
+            <button
+              style="
+                width: 50%;
+                padding: 7px 0;
+                background-color: chocolate;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+              "
+            >
+              delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script/blog.js"></script>
+    <script src="script/navbar.js"></script>
+  </body>
+</html>

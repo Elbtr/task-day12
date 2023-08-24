@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+/* 
+.send-mail form h1 {
+  margin-bottom: 20px;
+}
+
+.send-mail form .send-button {
+  margin-top: 20px;
+}
+
+input,
+select {
+  height: 40px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  background-color: rgb(134, 136, 138);
+  color: white;
+  padding: 3px 8px;
+  border: none;
+  border-radius: 8px;
+}
+::placeholder {
+  color: white;
+  opacity: 0.8; /* Firefox */
+/* } 
+/* select option {
+  background-color: rgb(219, 214, 214);
+  color: black;
+  border: none;
+}
+
+textarea {
+  padding-top: 5px;
+}
+
+label {
+  font-weight: 500;
+}
+
+button {
+  background-color: black;
+  border-radius: 5px;
+  width: 70px;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+button:hover {
+  background-color: orangered;
+}
+
+.send-mail {
+  margin: 40px auto;
+  width: 350px;
+  padding: 10px;
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .send-mail {
+    margin: 10px auto;
+    padding: 10px;
+    display: none;
+  }
+} */
+
+.container-contact {
+  margin: 90px auto;
+  width: 800px;
+}
+
+.item-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-form form div {
+  margin-bottom: 10px;
+}
+
+.item-form form div input,
+label,
+textarea {
+  font-size: 20px;
+  width: 100%;
+  resize: none;
+}
+
+.item-form form div textarea {
+  border: none;
+  box-shadow: 0 0 2px 0;
+  border-radius: 8px;
+  padding: 6px 5px;
+}
+
+.item-form form div input {
+  border: none;
+  box-shadow: 0 0 2px 0;
+  border-radius: 8px;
+  padding: 6px 5px;
+}
+
+.item-form form .send-button {
+  border-radius: 6px;
+  width: 100%;
+}
+
+.item-form form .send-button div {
+  display: flex;
+  justify-content: end;
+}
+
+.item-form form .send-button div button {
+  border-radius: 6px;
+  border: none;
+  padding: 8px;
+}
+
+@media only screen and (max-width: 900px) {
+  .container-contact {
+    margin: 50px auto;
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .container-contact {
+    margin: 40px auto;
+    width: 550px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container-contact {
+    margin: 40px auto;
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container-contact {
+    margin: 30px auto;
+    width: 340px;
+  }
+}

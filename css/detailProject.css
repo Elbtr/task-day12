@@ -1,0 +1,10 @@
+.container-blog-detail {
+  margin: 40px auto;
+  width: 980px;
+}
+
+.header-detail-blog {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 75px;
+}

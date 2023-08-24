@@ -1,0 +1,43 @@
+.container-content {
+  margin: 90px auto;
+  padding: 10px;
+  width: 98vw;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: row;
+}
+
+.left-content {
+  flex: 50%;
+  padding-left: 30px;
+}
+.right-content {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-card {
+  box-shadow: 20px 20px 0px rgb(78, 78, 124);
+}
+.container-card2 {
+  box-shadow: 10px 10px 0px rgb(240, 240, 241);
+}
+
+@media only screen and (max-width: 900px) {
+  .container-content {
+    display: flex;
+    flex-direction: column;
+    width: 93vw;
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container-content {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 30px;
+  }
+}
