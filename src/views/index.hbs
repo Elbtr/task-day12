@@ -1,0 +1,224 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <title>Home</title>
+    <style>
+      body { background-image: url(gambar/bg-body.jpg); /* background-size:
+      cover; */ /* background-position: center; */ backdrop-filter: blur(2px);
+      margin-bottom: 40px; } .no-underline { text-decoration: none; }
+      .text-justify { text-align: justify; } .text { color: rgb(255, 255, 255);
+      font-weight: 600; } .container .title { color: rgb(255, 255, 255);
+      background-color: rgba(0, 0, 0, 0.7); border-top-left-radius: 10px;
+      border-bottom-right-radius: 50px; padding: 4px 0; }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="gambar/logo.png" alt="" width="50" height="40" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-sm-between d-flex w-100"
+          >
+            <div class="d-flex">
+              <li class="nav-item">
+                <a class="nav-link active" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/add-project">add Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/testimonials">Testimonials</a>
+              </li>
+            </div>
+            <div class="d-flex">
+              <li class="btn btn-light nav-item ms-auto">
+                <a class="no-underline" href="/contact">contact</a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="collapse navbar-collapse bg-gradient pt-2 pb-1 d-lg-none"
+      id="navbarSupportedContent"
+      style="
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        left: 0;
+        background-color: rgb(65, 64, 64);
+      "
+    >
+      <ul class="d-block w-100 text-center list-unstyled">
+        <li class="nav-item w-100 pt-2 pb-2">
+          <a class="nav-link active text-light" href="/">Home</a>
+        </li>
+        <li class="nav-item w-100 pt-2 pb-2">
+          <a class="nav-link text-light" href="/add-project">add Project</a>
+        </li>
+        <li class="nav-item w-100 pt-2 pb-2">
+          <a class="nav-link text-light" href="/testimonials">Testimonials</a>
+        </li>
+        <li class="btn-light nav-item ms-auto w-100 pt-3 pb-3">
+          <a class="no-underline" href="/contact">contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container text-center mt-5" style="position: relative">
+      <h1 class="title">Hi welcome to my Profile</h1>
+      <div
+        class="container-fluid d-flex justify-content-between gap-5 mt-5 mb-5 col-lg row"
+      >
+        <div class="mt-5 col-lg-7">
+          <p class="text-justify text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus amet quisquam delectus sequi veritatis quaerat magnam
+            eligendi? Nesciunt sed sit ipsam recusandae. Laboriosam consequuntur
+            beatae voluptatem numquam laudantium, ad explicabo!
+          </p>
+          <div class="d-flex gap-3 justify-content-start col mt-5">
+            <span class="btn btn-primary" style="height: 40px">
+              <a class="no-underline text-light" href="#">contact me</a>
+            </span>
+            <span class="btn border" style="height: 40px">
+              <a class="no-underline text-dark" href="#">download cv</a>
+            </span>
+          </div>
+          <section
+            class="fs-2 d-flex gap-3 justify-content-center"
+            style="margin-top: 5rem"
+          >
+            <a
+              href="https://github.com/Elbtr/task-day5"
+              class="no-underline d-flex justify-content-center align-items-center"
+              target="_blank"
+            >
+              <i
+                class="fa-brands fa-github d-none d-lg-block"
+                style="color: black"
+              ></i>
+              <i class="fa-brands fa-github text-white d-lg-none"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/hasaelbutar/"
+              class="no-underline"
+              target="_blank"
+            >
+              <i class="fa-brands fa-square-instagram" style="color: black"></i>
+            </a>
+            <a
+              href="https://web.facebook.com/hiszelki/"
+              class="no-underline"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook" style="color: black"></i>
+            </a>
+            <a
+              href="https://twitter.com/cokbebe2"
+              class="no-underline"
+              target="_blank"
+            >
+              <i class="fa-brands fa-twitter" style="color: black"></i>
+            </a>
+          </section>
+        </div>
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="card">
+            <img src="gambar/hasael.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body d-block">
+              <h5 class="card-title">Hasael Butar Butar</h5>
+              <p class="card-text">Fullstack Development</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="w-100 d-flex justify-content-center align-items-center d-lg-none"
+        >
+          <div class="card" style="width: 18rem">
+            <img
+              src="gambar/hasael.jpeg"
+              class="card-img-top"
+              alt="..."
+              style="width: 100%"
+            />
+            <div class="card-body d-block">
+              <h5 class="card-title">Hasael Butar Butar</h5>
+              <p class="card-text">Fullstack Development</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr
+        style="
+          color: black;
+          height: 3px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          opacity: 1;
+        "
+      />
+    </div>
+    <!-- card container -->
+    <div class="container">
+      <div class="container-fluid d-md-flex row gap-2">
+        <!-- card item -->
+        <div class="card" style="width: 18rem; border-radius: 10px; padding: 0">
+          <img
+            src="gambar/project.png"
+            class="card-img-top"
+            alt="..."
+            style="border-top-right-radius: 10px; border-top-left-radius: 10px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a
+              href="#"
+              class="btn btn-primary"
+              style="text-transform: capitalize"
+            >show detail project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

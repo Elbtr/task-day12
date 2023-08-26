@@ -1,0 +1,89 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <title>navbar</title>
+    <style>
+      .no-underline { text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="gambar/logo.png" alt="" width="50" height="40" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-sm-between d-flex w-100"
+          >
+            <div class="d-flex">
+              <li class="nav-item">
+                <a class="nav-link active" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/add-project">add Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/testimonials">Testimonials</a>
+              </li>
+            </div>
+            <div class="d-flex">
+              <li class="btn btn-light nav-item ms-auto">
+                <a class="no-underline" href="/contact">contact</a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="collapse navbar-collapse bg-gradient pt-2 pb-1 d-lg-none"
+      id="navbarSupportedContent"
+      style="
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        left: 0;
+        background-color: rgb(65, 64, 64);
+      "
+    >
+      <ul class="d-block w-100 text-center list-unstyled">
+        <li class="nav-item w-100 pt-2 pb-2">
+          <a class="nav-link active text-light" href="/">Home</a>
+        </li>
+        <li class="nav-item w-100 pt-2 pb-2">
+          <a class="nav-link text-light" href="/add-project">add Project</a>
+        </li>
+        <li class="nav-item w-100 pt-2 pb-2">
+          <a class="nav-link text-light" href="/testimonials">Testimonials</a>
+        </li>
+        <li class="btn-light nav-item ms-auto w-100 pt-3 pb-3">
+          <a class="no-underline" href="/contact">contact</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
