@@ -30,6 +30,7 @@ function submitHandler() {
   const mailRecipient = "hasaelbutarbutar80@gmail.com";
 
   let a = document.createElement("a");
+  a.target = "_blank";
   a.href = `https://mail.google.com/mail?view=cm&fs=1&to=${mailRecipient}&su=${subject}&body=${message}`;
   a.click();
 

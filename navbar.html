@@ -24,7 +24,7 @@
   <body>
     <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="gambar/logo.png" alt="" width="50" height="40" />
         </a>
         <button
@@ -44,18 +44,18 @@
           >
             <div class="d-flex">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link active" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">add Project</a>
+                <a class="nav-link" href="myProject.html">add Project</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Testimonials</a>
+                <a class="nav-link" href="testimonials.html">Testimonials</a>
               </li>
             </div>
             <div class="d-flex">
               <li class="btn btn-light nav-item ms-auto">
-                <a class="no-underline" href="#">contact</a>
+                <a class="no-underline" href="contact.html">contact</a>
               </li>
             </div>
           </ul>
@@ -63,18 +63,30 @@
       </div>
     </nav>
     <div
-      class="collapse navbar-collapse bg-dark bg-gradient"
+      class="collapse navbar-collapse bg-gradient pt-2 pb-1 d-lg-none"
       id="navbarSupportedContent"
+      style="
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        left: 0;
+        background-color: rgb(65, 64, 64);
+      "
     >
       <ul class="d-block w-100 text-center list-unstyled">
-        <li class="nav-item">
-          <a class="nav-link active text-light" href="#">Home</a>
+        <li class="nav-item w-100 pt-2 pb-2">
+          <a class="nav-link active text-light" href="index.html">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#">add Project</a>
+        <li class="nav-item w-100 pt-2 pb-2">
+          <a class="nav-link text-light" href="myProject.html">add Project</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#">Testimonials</a>
+        <li class="nav-item w-100 pt-2 pb-2">
+          <a class="nav-link text-light" href="testimonials.html"
+            >Testimonials</a
+          >
+        </li>
+        <li class="btn-light nav-item ms-auto w-100 pt-3 pb-3">
+          <a class="no-underline" href="contact.html">contact</a>
         </li>
       </ul>
     </div>

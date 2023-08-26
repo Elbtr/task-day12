@@ -4,278 +4,196 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/myProject.css" />
-    <title>Document</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <title>add project</title>
+    <style>
+      .no-underline {
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
-    <nav>
-      <div class="nav-left">
-        <ul>
-          <li class="link">
-            <a href="index.html">
-              <img src="gambar/logo.png" alt="logo" />
-            </a>
-          </li>
-          <li class="li-colabs">
-            <a href="index.html">Home</a>
-          </li>
-          <li class="active li-colabs">
-            <a href="myProject.html">My Project</a>
-          </li>
-          <li class="li-colabs">
-            <a href="testimonials.html">Testimonials</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="nav-right">
-        <div class="li-colabs">
-          <a href="contact.html">
-            <p>Contact</p>
-          </a>
-        </div>
-        <div class="button-bars">
-          <button onclick="toggleBarHandle()">
-            <i class="fa-solid fa-bars"></i>
-          </button>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="gambar/logo.png" alt="" width="50" height="40" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-sm-between d-flex w-100"
+          >
+            <div class="d-flex">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="myProject.html">add Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="testimonials.html">Testimonials</a>
+              </li>
+            </div>
+            <div class="d-flex">
+              <li class="btn btn-light nav-item ms-auto">
+                <a class="no-underline" href="contact.html">contact</a>
+              </li>
+            </div>
+          </ul>
         </div>
       </div>
     </nav>
-
-    <div class="item-list-menu-bars" id="item-list-menu-bars">
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
+    <div
+      class="collapse navbar-collapse bg-gradient pt-2 pb-1 d-lg-none"
+      id="navbarSupportedContent"
+      style="
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        left: 0;
+        background-color: rgb(65, 64, 64);
+      "
+    >
+      <ul class="d-block w-100 text-center list-unstyled">
+        <li class="nav-item w-100 pt-2 pb-2">
+          <a class="nav-link active text-light" href="index.html">Home</a>
         </li>
-        <li>
-          <a href="myProject.html">My Project</a>
+        <li class="nav-item w-100 pt-2 pb-2">
+          <a class="nav-link text-light" href="myProject.html">add Project</a>
         </li>
-        <li>
-          <a href="testimonials.html">Testimonials</a>
+        <li class="nav-item w-100 pt-2 pb-2">
+          <a class="nav-link text-light" href="testimonials.html"
+            >Testimonials</a
+          >
         </li>
-        <li>
-          <a href="contact.html">
-            <p>Contact</p>
-          </a>
+        <li class="btn-light nav-item ms-auto w-100 pt-3 pb-3">
+          <a class="no-underline" href="contact.html">contact</a>
         </li>
       </ul>
     </div>
-    <div class="container">
-      <div class="upload-project">
-        <div class="title">
-          <h1>Add My Project</h1>
-        </div>
-        <form onsubmit="addBlog(event)">
-          <div class="item-input-title">
-            <label for="input-title">Project Name</label>
-            <input type="text" id="input-title" />
-          </div>
 
-          <div class="item-date">
-            <div>
-              <label for="start-date">Start Date</label>
-              <input type="date" id="start-date" />
-            </div>
-            <div>
-              <label for="end-date">End Date</label>
-              <input type="date" id="end-date" />
-            </div>
-          </div>
-
-          <div class="item-input-content">
-            <label for="input-description">Description</label>
-            <textarea
-              name="input-description"
-              id="input-description"
-            ></textarea>
-          </div>
-
-          <div class="item-input-technologies">
-            <span>Technologies</span>
-            <div>
-              <div>
-                <label for="nodeJs">
-                  <input
-                    type="checkbox"
-                    name="framework"
-                    id="nodeJs"
-                    value="Node js"
-                  />
-                  Node Js
-                </label>
-              </div>
-              <div>
-                <label for="reactJs">
-                  <input
-                    type="checkbox"
-                    name="framework"
-                    id="reactJs"
-                    value="React js"
-                  />
-                  React Js
-                </label>
-              </div>
-              <div>
-                <label for="nextJs">
-                  <input
-                    type="checkbox"
-                    name="framework"
-                    id="java"
-                    value="Java"
-                  />
-                  Java
-                </label>
-              </div>
-              <div>
-                <label for="php">
-                  <input
-                    type="checkbox"
-                    name="framework"
-                    id="php"
-                    value="PHP"
-                  />
-                  PHP
-                </label>
-              </div>
-            </div>
-          </div>
-
-          <div class="item-input-image">
-            <span>Upload Image</span>
-            <label for="input-image">
-              <input type="file" id="input-image" hidden />
-              <span
-                style="
-                  margin-bottom: -1px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  text-align: center;
-                  width: 90px;
-                  height: 100%;
-                  border-radius: 8px;
-                  text-align: center;
-                "
-              >
-                <p>Choose</p>
-              </span>
-              <i class="fa-solid fa-file-import"></i>
-            </label>
-          </div>
-
-          <div style="width: 100%; display: flex; align-items: end">
-            <button
-              style="
-                width: 70px;
-                background: #000;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: white;
-                border: none;
-                height: 40px;
-                border-radius: 8px;
-                cursor: pointer;
-              "
-              class="animasi-button"
-              type="submit"
-            >
-              submit
-            </button>
-          </div>
-        </form>
-      </div>
-      <hr class="line" />
-      <div class="list-project" id="list-project">
-        <div class="card" id="card">
-          <img
-            src="gambar/project.png"
-            alt="project"
-            style="width: 100%; height: 200px; border-radius: 8px"
-          />
-          <div style="padding: 0">
-            <h5>Dumways mobile app v.3.4.01</h5>
-            <p style="font-weight: 200">duration : 3 mount</p>
-          </div>
-          <div style="padding: 0">
-            <p
-              style="
-                font-weight: 400;
-                white-space: normal;
-                overflow: hidden;
-                display: -webkit-box;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-              "
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
-              provident, libero tempora eveniet perspiciatis ad delectus et
-              debitis reprehenderit quibusdam doloribus at doloremque impedit
-              pariatur maiores. Dignissimos a sed eveniet?
-            </p>
-            <a
-              href="detailProject.html"
-              style="font-size: 13px; text-decoration: underline"
-              >lihat selengkap nya <span style="font-weight: bold">-></span></a
-            >
-          </div>
-          <section
-            style="
-              font-size: 24px;
-              display: flex;
-              justify-content: start;
-              align-items: center;
-              gap: 20px;
-            "
-          >
-            <i class="fa-brands fa-google-play"></i>
-            <i class="fa-brands fa-android"></i>
-            <i class="fa-brands fa-java"></i>
-          </section>
-          <div
-            style="
-              padding: 0;
-              display: flex;
-              justify-content: space-between;
-              gap: 5px;
-            "
-          >
-            <button
-              style="
-                width: 50%;
-                padding: 7px 0;
-                background-color: chocolate;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-              "
-            >
-              edit
-            </button>
-            <button
-              style="
-                width: 50%;
-                padding: 7px 0;
-                background-color: chocolate;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-              "
-            >
-              delete
-            </button>
-          </div>
-        </div>
-      </div>
+    <div class="container mt-4">
+      <h1 class="text-center">Upload Project</h1>
     </div>
-    <script src="script/blog.js"></script>
-    <script src="script/navbar.js"></script>
+    <div style="width: 400px; margin: 50px auto">
+      <form class="shadow-lg p-4">
+        <div class="mb-3">
+          <label for="input-title" class="form-label">Title</label>
+          <input
+            name="inputTitle"
+            type="text"
+            class="form-control"
+            id="input-title"
+          />
+        </div>
+        <div class="input-group mb-3" style="text-transform: capitalize">
+          <div class="w-50">
+            <label for="startDate">start date</label>
+            <input
+              id="startDate"
+              type="date"
+              class="form-control"
+              aria-label="Amount (to the nearest dollar)"
+            />
+          </div>
+          <div class="w-50">
+            <label for="endDate">end date</label>
+            <input
+              id="endDate"
+              type="date"
+              class="form-control"
+              aria-label="Amount (to the nearest dollar)"
+            />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="input-description" class="form-label">Description</label>
+          <textarea
+            class="form-control"
+            id="input-description"
+            style="resize: none"
+            rows="7"
+          ></textarea>
+        </div>
+        <span>Technologies</span>
+        <div class="d-flex justify-content-between mt-2">
+          <div>
+            <div class="mb-3 form-check">
+              <input
+                value="PHP"
+                type="checkbox"
+                class="form-check-input"
+                id="php"
+                name="framework"
+              />
+              <label class="form-check-label" for="php">PHP</label>
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                value="Node js"
+                type="checkbox"
+                class="form-check-input"
+                id="nodejs"
+                name="framework"
+              />
+              <label class="form-check-label" for="nodejs">Node Js</label>
+            </div>
+          </div>
+          <div class="justify-content-start w-50">
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                name="framework"
+                id="reactJs"
+                value="React js"
+                class="form-check-input"
+              />
+              <label class="form-check-label" for="nodejs">React js</label>
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                name="framework"
+                class="form-check-input"
+                id="java"
+                value="Java"
+              />
+              <label class="form-check-label" for="nodejs">java</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="file" class="form-control" id="input-image" />
+          <label
+            class="input-group-text"
+            for="input-image"
+            style="cursor: pointer"
+            >Upload</label
+          >
+        </div>
+        <div class="w-100 justify-content-end d-flex">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>

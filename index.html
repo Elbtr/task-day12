@@ -28,6 +28,7 @@
         /* background-size: cover; */
         /* background-position: center; */
         backdrop-filter: blur(2px);
+        margin-bottom: 40px;
       }
       .no-underline {
         text-decoration: none;
@@ -39,7 +40,7 @@
         color: rgb(255, 255, 255);
         font-weight: 600;
       }
-      .container h1 {
+      .container .title {
         color: rgb(255, 255, 255);
         background-color: rgba(0, 0, 0, 0.7);
         border-top-left-radius: 10px;
@@ -49,9 +50,10 @@
     </style>
   </head>
   <body>
+    <!-- navbar -->
     <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="gambar/logo.png" alt="" width="50" height="40" />
         </a>
         <button
@@ -71,24 +73,25 @@
           >
             <div class="d-flex">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link active" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">add Project</a>
+                <a class="nav-link" href="myProject.html">add Project</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Testimonials</a>
+                <a class="nav-link" href="testimonials.html">Testimonials</a>
               </li>
             </div>
             <div class="d-flex">
               <li class="btn btn-light nav-item ms-auto">
-                <a class="no-underline" href="#">contact</a>
+                <a class="no-underline" href="contact.html">contact</a>
               </li>
             </div>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- list navbar versi mobile -->
     <div
       class="collapse navbar-collapse bg-gradient pt-2 pb-1 d-lg-none"
       id="navbarSupportedContent"
@@ -102,22 +105,24 @@
     >
       <ul class="d-block w-100 text-center list-unstyled">
         <li class="nav-item w-100 pt-2 pb-2">
-          <a class="nav-link active text-light" href="#">Home</a>
+          <a class="nav-link active text-light" href="index.html">Home</a>
         </li>
         <li class="nav-item w-100 pt-2 pb-2">
-          <a class="nav-link text-light" href="#">add Project</a>
+          <a class="nav-link text-light" href="myProject.html">add Project</a>
         </li>
         <li class="nav-item w-100 pt-2 pb-2">
-          <a class="nav-link text-light" href="#">Testimonials</a>
+          <a class="nav-link text-light" href="testimonials.html"
+            >Testimonials</a
+          >
         </li>
         <li class="btn-light nav-item ms-auto w-100 pt-3 pb-3">
-          <a class="no-underline" href="#">contact</a>
+          <a class="no-underline" href="contact.html">contact</a>
         </li>
       </ul>
     </div>
 
     <div class="container text-center mt-5" style="position: relative">
-      <h1>Hi welcome to my Profile</h1>
+      <h1 class="title">Hi welcome to my Profile</h1>
       <div
         class="container-fluid d-flex justify-content-between gap-5 mt-5 mb-5 col-lg row"
       >
@@ -201,93 +206,42 @@
           </div>
         </div>
       </div>
-    </div>
-  </body>
-</html>
-
-<!-- <div class="container-content">
-    <div class="left-content">
-      <h1 style="text-transform: capitalize">Hi welcome to my hut</h1>
-      <p style="font-size: 18px">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
-        cupiditate accusantium rem laborum! Maxime illo quasi ipsum inventore
-        maiores officiis?
-      </p>
-      <div style="display: flex; flex-direction: column; width: 50%">
-        <button
-          style="
-            width: 80px;
-            background-color: black;
-            color: white;
-            border-radius: 10px;
-            font-size: 16px;
-            margin-top: 18px;
-          "
-        >
-          contact
-        </button>
-        <a
-          href=""
-          style="margin-top: 18px; text-decoration: none; color: black"
-          >download cv</a
-        >
-      </div>
-      <section
+      <hr
         style="
-          margin-top: 30px;
-          width: 100%;
-          display: flex;
-          justify-content: center;
+          color: black;
+          height: 3px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          opacity: 1;
         "
-        class="item-logo"
-      >
-        <a href="https://github.com/Elbtr/task-day5" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://www.instagram.com/hasaelbutar/" target="_blank">
-          <i class="fa-brands fa-square-instagram"></i>
-        </a>
-        <a href="https://web.facebook.com/hiszelki/" target="_blank">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://twitter.com/cokbebe2">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-      </section>
+      />
     </div>
-    <div class="right-content">
-      <div style="display: flex; justify-content: center">
-        <div style="width: 280px; border-radius: 10px" class="container-card">
-          <div
-            style="
-              width: 100%;
-              box-shadow: -2px 2px 10px 0px rgba(0, 0, 0, 0.75);
-              -webkit-box-shadow: -2px 2px 10px 0px rgba(0, 0, 0, 0.75);
-              -moz-box-shadow: -2px 2px 10px 0px rgba(0, 0, 0, 0.75);
-              border-radius: 10px;
-              padding-bottom: 20px;
-              text-align: center;
-              cursor: pointer;
-            "
-            class="card"
-          >
-            <img
-              src="gambar/belajar.jpg"
-              alt="profile"
-              style="
-                width: 100%;
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-              "
-            />
-            <h3 style="margin-top: 10px; padding-left: 3px">Hasael</h3>
-            <h3
-              style="margin-top: 8px; padding-left: 3px; font-weight: lighter"
+    <!-- card container -->
+    <div class="container">
+      <div class="container-fluid d-md-flex row gap-2">
+        <!-- card item -->
+        <div class="card" style="width: 18rem; border-radius: 10px; padding: 0">
+          <img
+            src="gambar/project.png"
+            class="card-img-top"
+            alt="..."
+            style="border-top-right-radius: 10px; border-top-left-radius: 10px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a
+              href="#"
+              class="btn btn-primary"
+              style="text-transform: capitalize"
+              >show detail project</a
             >
-              Fullstack Development
-            </h3>
           </div>
         </div>
       </div>
     </div>
-  </div> -->
+  </body>
+</html>
