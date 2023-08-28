@@ -198,27 +198,87 @@
     <div class="container">
       <div class="container-fluid d-md-flex row gap-2">
         <!-- card item -->
-        <div class="card" style="width: 18rem; border-radius: 10px; padding: 0">
-          <img
-            src="gambar/project.png"
-            class="card-img-top"
-            alt="..."
-            style="border-top-right-radius: 10px; border-top-left-radius: 10px"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a
-              href="#"
-              class="btn btn-primary"
-              style="text-transform: capitalize"
-            >show detail project</a>
+        {{#each cardData}}
+          <div
+            class="card"
+            style="width: 18rem; border-radius: 10px; padding: 0"
+          >
+            <img
+              src="{{this.image}}"
+              class="card-img-top"
+              alt="..."
+              style="border-top-right-radius: 10px; border-top-left-radius: 10px;"
+            />
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title">{{this.title}}</h5>
+              <h6>Duration : {{this.duration}}</h6>
+              <p
+                class="card-text"
+                style="
+                font-weight: 400;
+                white-space: normal;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+              "
+              >
+                {{this.description}}
+              </p>
+              <section class="d-flex mb-4 gap-3" id="icon-select">
+                <i class="fa-brands fs-3 fa-react"></i>
+                <i class="fa-brands fs-3 fa-node-js"></i>
+                <i class="fa-brands fs-3 fa-java"></i>
+                <i class="fa-brands fs-3 fa-php"></i>
+              </section>
+              <a
+                href="/detail-project/{{@index}}"
+                class="btn btn-primary"
+                style="text-transform: capitalize"
+              >show detail project</a>
+              <div
+                style="
+              margin-top: 20px;
+              padding: 0;
+              display: flex;
+              justify-content: space-between;
+              gap: 5px;
+            "
+              >
+                <button
+                  style="
+                width: 50%;
+                padding: 7px 0;
+                background-color: chocolate;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+              "
+                >
+                  <a href="/edit-project/{{@index}}">
+                    edit
+                  </a>
+                </button>
+                <button
+                  style="
+                width: 50%;
+                padding: 7px 0;
+                background-color: chocolate;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+              "
+                >
+                  <a href="/delete-project/{{@index}}">
+                    delete
+                  </a>
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
+        {{/each}}
       </div>
     </div>
+    <script src="../assets/script/iconProject.js"></script>
   </body>
 </html>

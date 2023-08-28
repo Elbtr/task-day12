@@ -29,7 +29,7 @@
     <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">
-          <img src="gambar/logo.png" alt="" width="50" height="40" />
+          <img src="../assets/gambar/logo.png" alt="" width="50" height="40" />
         </a>
         <button
           class="navbar-toggler"
@@ -94,11 +94,21 @@
     </div>
 
     <div class="container mt-4">
-      <h1 class="text-center">Dumways Web App</h1>
-      <div class="container-fluid d-lg-flex gap-3 mt-5">
+      <div class="w-100 d-flex justify-content-between">
+        <h1
+          class="text-center"
+          style="text-transform: capitalize;"
+        >{{detail.title}}</h1>
+        <a
+          href="/"
+          class="btn btn-primary pt-3"
+          style="text-transform: uppercase;"
+        >back</a>
+      </div>
+      <div class="container-fluid d-lg-flex gap-3 mt-5 justify-content-center">
         <div class="img-fluid d-lg-none d-block">
           <img
-            src="./gambar/project.png"
+            src="{{detail.image}}"
             class="img-fluid"
             style="width: 100%; object-fit: contain"
             alt="detail"
@@ -106,7 +116,7 @@
         </div>
         <div style="width: 60%" class="d-lg-block d-none">
           <img
-            src="./gambar/project.png"
+            src="{{detail.image}}"
             class="img-fluid"
             style="width: 100%; object-fit: contain"
             alt="detail"
@@ -119,11 +129,11 @@
             <div class="d-flex gap-2 flex-column">
               <div class="d-flex gap-2 w-100">
                 <i class="fa-solid fa-calendar mt-1"></i>
-                <p class="w-100">10 agustus 2023 - 26 desember 2023</p>
+                <p class="w-100">{{detail.startDate}} - {{detail.endDate}}</p>
               </div>
               <div class="d-flex gap-2">
                 <i class="fa-solid fa-clock mt-1"></i>
-                <p>4 month</p>
+                <p>{{detail.duration}}</p>
               </div>
             </div>
           </div>
@@ -151,11 +161,11 @@
             <div class="d-flex gap-2 flex-column">
               <div class="d-flex gap-2">
                 <i class="fa-solid fa-calendar mt-1"></i>
-                <p>10 agustus 2023 - 26 desember 2023</p>
+                <p>{{detail.startDate}} - {{detail.endDate}}</p>
               </div>
               <div class="d-flex gap-2">
                 <i class="fa-solid fa-clock mt-1"></i>
-                <p>4 month</p>
+                <p>{{detail.duration}}</p>
               </div>
             </div>
           </div>
@@ -172,55 +182,28 @@
                 <i class="fa-brands fa-react"></i>
                 <p>React Js</p>
               </div>
+              <div style="display: flex; gap: 10px">
+                <i class="fa-brands fa-react"></i>
+                <p>React Js</p>
+              </div>
+              <div style="display: flex; gap: 10px">
+                <i class="fa-brands fa-react"></i>
+                <p>React Js</p>
+              </div>
+              <div style="display: flex; gap: 10px">
+                <i class="fa-brands fa-react"></i>
+                <p>React Js</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div style="text-align: justify; margin-right: 10px" class="mt-5">
-        <p style="font-size: 16px; letter-spacing: 0.5px; font-weight: 300">
-          <span style="padding-left: 12px">Lorem</span>
-          ipsum dolor sit, amet consectetur adipisicing elit. Ea quisquam rem
-          soluta veniam porro, autem aspernatur voluptatum perferendis error
-          suscipit cum labore optio voluptate harum voluptatibus? Quisquam
-          nostrum temporibus fuga, deleniti nemo voluptate totam minus
-          repudiandae ab. Quis quae eum doloremque non provident vero ipsam
-          laudantium odit aliquam culpa rerum repellat cupiditate sed labore
-          commodi impedit quisquam, repudiandae molestias, tempore hic dolores
-          consectetur fugiat veniam totam. Amet sed eveniet vitae, maxime
-          cupiditate exercitationem officiis deleniti nihil ipsum nam asperiores
-          pariatur odit quod voluptates, deserunt quas qui, mollitia omnis eius
-          ipsam rerum. Inventore aliquid facilis totam. Tempora optio mollitia
-          minima qui eveniet expedita dolore harum hic, quaerat ullam iusto sit?
-          Corporis vel mollitia numquam id officia, non pariatur necessitatibus
-          distinctio similique aliquid voluptate sit dolorum commodi odio veniam
-          nesciunt exercitationem velit quo molestias perferendis hic dolore
-          error, repudiandae minima? Animi itaque quod laborum eum sapiente
-          totam repellat, provident ad, perspiciatis quo, consectetur non minima
-          unde deleniti accusantium delectus? Blanditiis voluptas rem reiciendis
-          veniam, ad eligendi officiis similique. Modi totam officiis voluptates
-          consequatur? Dolores dolor et totam aspernatur rerum officia quam
-          dolore, aliquid sapiente, adipisci quae laborum obcaecati ullam nisi
-          inventore, repellendus perspiciatis corrupti pariatur facere nostrum
-          recusandae tempore debitis. Totam saepe eligendi repudiandae optio
-          nostrum odit eum, eius nisi harum esse facere placeat animi autem
-          perferendis, sit quibusdam doloribus quisquam vero voluptate? Sapiente
-          doloremque debitis voluptatibus nemo ipsa ipsum nesciunt nam fuga iste
-          tempora dolorem corrupti molestiae veritatis, quis consectetur
-          necessitatibus quia consequuntur odit nihil excepturi ea. Dolorem
-          dolor minima sed fugiat ullam obcaecati rerum modi deleniti, excepturi
-          sunt et delectus neque porro aperiam numquam. Tempora, dolor. Magnam
-          quia ipsa magni aperiam saepe. Suscipit expedita nostrum tenetur,
-          dolorem quidem quos, consequatur amet molestias eum, tempora ipsa hic
-          inventore laudantium temporibus quia accusamus veritatis ex quaerat
-          dicta perspiciatis harum maiores id sint! Reiciendis inventore maxime
-          perferendis, eos, molestiae laboriosam, voluptates illo debitis dicta
-          et ab soluta! Aperiam suscipit dignissimos quidem ut nostrum? Repellat
-          itaque ea nesciunt ducimus, rerum optio possimus voluptas
-          perspiciatis. Tempore tempora dicta fugiat repellat! Neque quasi nam
-          soluta dignissimos nesciunt ipsa recusandae magnam dolor, excepturi
-          obcaecati nostrum, temporibus, consequuntur a quidem! Ipsum quidem
-          corrupti delectus odit perspiciatis blanditiis fugiat quo aspernatur
+        <p
+          style="font-size: 16px; letter-spacing: 0.5px; font-weight: 300;padding-left: 8px;"
+        >
+          {{detail.description}}
         </p>
       </div>
     </div>
